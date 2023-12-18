@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "beau_miles",
+    "url": "https://www.youtube.com/@BeauMiles",
+    "date_after": "2023-12-01"
+  },
+  {
+    "slug": "casey_la_delle",
+    "url": "https://www.youtube.com/@CaseyLaDelle",
+    "date_after": "2023-12-01"
+  },
+  {
+    "slug": "this_old_tony",
+    "url": "https://www.youtube.com/@ThisOldTony",
+    "date_after": "2023-12-01"
+  },
+  {
+    "slug": "matts_off_road_recovery",
+    "url": "https://www.youtube.com/@MattsOffRoadRecovery",
+    "date_after": "2023-12-01"
+  },
+  {
+    "slug": "andrew_camarata",
+    "url": "https://www.youtube.com/@AndrewCamarata",
+    "date_after": "2023-12-01"
+  },
+  {
+    "slug": "simple_living_alaska",
+    "url": "https://www.youtube.com/@SimpleLivingAlaska",
+    "date_after": "2023-12-01"
+  },
+  {
+    "slug": "camping_with_steve",
+    "url": "https://www.youtube.com/@campingwithsteve",
+    "date_after": "2023-12-01"
+  },
+  {
+     "slug": "primitive_technology",
+     "url": "https://www.youtube.com/@primitivetechnology9550",
+     "date_after": "2023-12-01"
+   }
+]

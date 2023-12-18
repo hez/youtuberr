@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  app:
+    user: "${UID}"
+    profiles: ["build"]
+    build:
+      dockerfile: ./Dockerfile
+    volumes:
+        - ./downloads:/app/downloads
+        - ./subscriptions.json:/app/subscriptions.json

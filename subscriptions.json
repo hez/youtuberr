@@ -1,5 +1,11 @@
 [
   {
+     "slug": "primitive_technology",
+     "url": "https://www.youtube.com/@primitivetechnology9550",
+     "date_after": "2023-11-15",
+     "subtitles": "en.*"
+  },
+  {
     "slug": "beau_miles",
     "url": "https://www.youtube.com/@BeauMiles",
     "date_after": "2023-12-01"
@@ -33,10 +39,5 @@
     "slug": "camping_with_steve",
     "url": "https://www.youtube.com/@campingwithsteve",
     "date_after": "2023-12-01"
-  },
-  {
-     "slug": "primitive_technology",
-     "url": "https://www.youtube.com/@primitivetechnology9550",
-     "date_after": "2023-12-01"
-   }
+  }
 ]

@@ -1,9 +1,13 @@
 ARG ELIXIR_VERSION=1.15.7
 ARG OTP_VERSION=26.2
 ARG DEBIAN_VERSION=bookworm-20231009-slim
+ARG ALPINE_VERSION=3.18.4
 
 ARG BUILDER_IMAGE="hexpm/elixir:${ELIXIR_VERSION}-erlang-${OTP_VERSION}-debian-${DEBIAN_VERSION}"
-ARG RUNNER_IMAGE="debian:${DEBIAN_VERSION}"
+# ARG BUILDER_IMAGE="hexpm/elixir:${ELIXIR_VERSION}-erlang-${OTP_VERSION}-alpine-${ALPINE_VERSION}"
+ARG RUNNER_IMAGE="ghcr.io/linuxserver/baseimage-debian:bookworm"
+# ARG RUNNER_IMAGE="alpine:${ALPINE_VERSION}"
+# ARG RUNNER_IMAGE="debian:${DEBIAN_VERSION}"
 
 FROM ${BUILDER_IMAGE} as builder
 
@@ -58,7 +62,7 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 WORKDIR "/app"
-RUN chown nobody /app
+RUN chown abc /app
 
 # YTDL
 # Create venv
@@ -72,8 +76,11 @@ ENV YTDLP_PATH="/opt/venv/bin/yt-dlp"
 ENV MIX_ENV="prod"
 
 # Only copy the final release from the build stage
-COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/youtuberr ./
+COPY --from=builder --chown=abc:abc /app/_build/${MIX_ENV}/rel/youtuberr ./
 
-USER nobody
+# add local files
+COPY root/ /
 
-CMD ["/app/bin/youtuberr", "start"]
+# USER abc
+
+# CMD ["/app/bin/youtuberr", "start"]

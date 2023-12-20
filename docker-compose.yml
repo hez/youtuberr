@@ -7,3 +7,6 @@ services:
     volumes:
         - ./downloads:/app/downloads
         - ./subscriptions.json:/app/subscriptions.json
+    environment:
+        - PUID=501
+        - PGID=501

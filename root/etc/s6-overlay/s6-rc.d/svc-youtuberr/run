@@ -5,6 +5,7 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 
+ps aux
 exec \
     s6-notifyoncheck -d -n 300 -w 1000 \
         cd /app s6-setuidgid abc bin/youtuberr start
